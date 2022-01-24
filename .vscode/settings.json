@@ -1,0 +1,21 @@
+{
+  "eslint.workingDirectories": [
+    "./*"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "editor.fontFamily": "D2Coding ligature",
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "terminal.integrated.fontFamily": "D2Coding ligature",
+  "terminal.integrated.fontSize": 15,
+  "debug.console.fontSize": 15,
+  "editor.suggestFontSize": 15,
+  "markdown.preview.fontSize": 15,
+  "editor.wordWrapColumn": 100,
+}
