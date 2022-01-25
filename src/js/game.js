@@ -9,6 +9,10 @@ const key = {
   }
 }
 
+const allMonsterComProp = {
+  arr: []
+}
+
 const bulletComProp = {
   launch: false,
   arr: []
@@ -30,6 +34,10 @@ const renderGame = () => {
   bulletComProp.arr.forEach((arr, i) => {
     arr.moveBullet()
   })
+  allMonsterComProp.arr.forEach((arr, i) => {
+    arr.moveMonster()
+  })
+
   window.requestAnimationFrame(renderGame)
   // console.log('call renderGame')
 }
@@ -69,6 +77,8 @@ let hero
 
 const init = () => {
   hero = new Hero('.hero')
+  allMonsterComProp.arr[0] = new Monster(700, 7777)
+  allMonsterComProp.arr[1] = new Monster(1500, 9000)
   loadImg()
   windowEvent()
   renderGame()
