@@ -1,11 +1,10 @@
 const key = {
   keyDown: {},
   keyValue: {
-    37: 'left',    
-    39: 'right',
-    38: 'up',
-    40: 'down',
-    88: 'attack'
+    37: 'left',
+		39: 'right',
+		88: 'attack',
+		67: 'slide'
   }
 }
 
@@ -24,12 +23,13 @@ const gameBackground = {
 
 const stageInfo = {
 	stage: [],
-  totalScore: 0,
+	totalScore: 0,
 	monster: [
 		{defaultMon: greenMon, bossMon: greenMonBoss},
 		{defaultMon: yellowMon, bossMon: yellowMonBoss},
 		{defaultMon: pinkMon, bossMon: pinkMonBoss}
-	]
+	],
+	callPosition: [1000, 5000, 9000]
 }
 
 const gameProp = {
